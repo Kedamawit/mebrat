@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @mebrat_list.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @mebrat_list.description %>
+</p>
+
+<%= link_to 'Edit', edit_mebrat_list_path(@mebrat_list) %> |
+<%= link_to 'Back', mebrat_lists_path %>

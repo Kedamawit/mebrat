@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mebrat Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mebrat_lists.each do |mebrat_list| %>
+      <tr>
+        <td><%= mebrat_list.title %></td>
+        <td><%= mebrat_list.description %></td>
+        <td><%= link_to 'Show', mebrat_list %></td>
+        <td><%= link_to 'Edit', edit_mebrat_list_path(mebrat_list) %></td>
+        <td><%= link_to 'Destroy', mebrat_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mebrat List', new_mebrat_list_path %>

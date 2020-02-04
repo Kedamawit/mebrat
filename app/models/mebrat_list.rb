@@ -1,0 +1,2 @@
+class MebratList < ApplicationRecord
+end
