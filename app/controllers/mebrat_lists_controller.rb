@@ -71,4 +71,6 @@ class MebratListsController < ApplicationController
     def mebrat_list_params
       params.require(:mebrat_list).permit(:title, :description)
     end
+
+    
 end
