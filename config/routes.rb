@@ -5,5 +5,12 @@ Rails.application.routes.draw do
  root "mebrat_lists#index"
  
  get "/:page" => "static#show"
- 
+
+ get "/help" => "static#help"
+
+  get "/abouut" => "static#abouut"
+
+
+
+
 end

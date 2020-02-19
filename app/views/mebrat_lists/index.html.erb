@@ -7,7 +7,24 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
+
+      <a href="about"> About Page 1</a><br/>
+      <a href="help"> Help Page 1</a><br/>
+      <a href="question"> Question Page 1</a><br/>
+
+      
       <th colspan="3"></th>
+
+
+ <p>Date/Time: <span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+
+
+
+
     </tr>
   </thead>
 
@@ -18,7 +35,7 @@
         <td><%= mebrat_list.description %></td>
         <td><%= link_to 'Show', mebrat_list %></td>
         <td><%= link_to 'Edit', edit_mebrat_list_path(mebrat_list) %></td>
-        <td><%= link_to 'Destroy', mebrat_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy!', mebrat_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
