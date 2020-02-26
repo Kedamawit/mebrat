@@ -1,3 +1,5 @@
+
+=begin
 require 'test_helper'
 
 class MebratListsControllerTest < ActionDispatch::IntegrationTest
@@ -46,3 +48,5 @@ class MebratListsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to mebrat_lists_url
   end
 end
+=end
+

@@ -8,9 +8,5 @@ Rails.application.routes.draw do
 
  get "/help" => "static#help"
 
-  get "/abouut" => "static#abouut"
-
-
-
 
 end
