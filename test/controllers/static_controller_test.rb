@@ -3,18 +3,7 @@ require 'test_helper'
 class StaticControllerTest < ActionDispatch::IntegrationTest
 
  test "should get help" do
-   get static_home_url
-   assert_response :success
-  end
-
- test "should get help" do
-   get static_help_url
-   assert_response :success
-  end
-
-
- test "should get help" do
-   get static_about_url
+   get help_path 
    assert_response :success
   end
 
