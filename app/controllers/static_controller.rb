@@ -8,11 +8,8 @@ def
 	help
 end
 
-
 def 
 	abouut 
-	render params[:page]
-
 end
 
 

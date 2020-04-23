@@ -1,19 +1,21 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mebrat</title>
-    <%= csrf_meta_tags %>
+    <title> Mebrat Todo List </title>
 
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <%= render '/layouts/header' %>
 
-  	<%= link_to "about", root_path %>
-      <a href="help"> Help Page 1</a><br/>
-      <a href="abouut"> Question Page 1</a><br/>
+        <div class = "container">
+          <body>
+        <%= yield %>
+<%= render '/layouts/footer' %>
 
-    <%= yield %>
-  </body>
+         </body>
+       </div >
 </html>
